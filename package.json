@@ -1,0 +1,30 @@
+{
+  "name": "@kctolli/netlifyformquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kctolli/NetlifyFormQuery.git"
+  },
+  "keywords": [
+    "Netlify",
+    "Form",
+    "Node",
+    "TypeScript"
+  ],
+  "author": "kctolli",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kctolli/NetlifyFormQuery/issues"
+  },
+  "homepage": "https://github.com/kctolli/NetlifyFormQuery#readme",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "typescript": "^5.3.3"
+  }
+}
