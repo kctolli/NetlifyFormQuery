@@ -1,6 +1,6 @@
 {
   "name": "@kctolli/netlifyformquery",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collection of backend helper functions to make querying Netlify Forms easier",
   "main": "index.ts",
   "type": "module",
