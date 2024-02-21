@@ -19,6 +19,11 @@ export default class NetlifyFormQuery {
 
     public getOptions = (): any => ({ headers: { ...this.getHeaders() } });
 
+    public static getData = async (apiToken, formId) => {
+        const formQuery = new NetlifyFormQuery(apiToken, formId);
+        return await formQuery.getSubmissions();
+    }
+
     /***************************************************
      * Private Methods
      ***************************************************/
