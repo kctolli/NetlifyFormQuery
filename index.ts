@@ -9,16 +9,9 @@ export default class NetlifyFormQuery {
         this.token = token;
     }
 
-    public getSubmissionData = async (): Promise<any> => {
-        const data = [];
-        const submissions = await this.getSubmissions();
-        submissions.map((item: any) => {
-            // @ts-ignore
-            return data.push(item?.data);
-        });
-        return data;
-    };
-
+    /***************************************************
+     * Public Methods
+     ***************************************************/
     public getSubmissions = async (): Promise<any> => {
         const response = await axios.get(this.url, this.getOptions());
         return response?.data;
@@ -26,6 +19,9 @@ export default class NetlifyFormQuery {
 
     public getOptions = (): any => ({ headers: { ...this.getHeaders() } });
 
+    /***************************************************
+     * Private Methods
+     ***************************************************/
     private readonly getHeaders = (): any => ({
         "Content-Type": "application/json",
         "Authorization": `Bearer ${this.token}`
